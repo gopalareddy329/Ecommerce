@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LycraMenWare Login</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/css/login.css'%}">
+</head>
+<body>
+    
+    <div class="login-box">
+        
+        <h1>LycraMenWare</h1>
+        <div class="login-form-box">
+            <a href="{% url 'storepage'%}" style="color: black; font-size: 20px; text-decoration: none; position: absolute; left: 15px; top: 15px;">X</a>
+            <h2>LOGIN</h2>
+            <form>
+                <input type="email" placeholder="Enter email">
+                <input type="password" placeholder="Enter password">
+                <button>Login</button>
+            </form>
+            <p>Don't have an account?,<a href="{% url 'signuppage' %}">sign up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Forget password?</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>

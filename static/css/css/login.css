@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,600;0,700;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+body {
+    font-family: 'Poppins', serif;
+    background-color: #d7d9ce;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100dvh;
+
+    position: relative;
+    
+    
+}
+.login-box{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    max-width: 35%;
+    height: 65%;
+    text-align: center;
+
+
+}
+.login-form-box{
+    margin-top: 10%;
+    background-color: white;
+    padding-top: 75%;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.login-box .login-form-box input{
+    margin: 8% 7% 3% 7%;
+    height: 5dvh;
+    width: 90%;
+    border: 1px solid #d7d9ce;
+    padding: 20px 15px;
+}
+.login-box .login-form-box input::placeholder{
+    color: #1B7D90;
+    font-weight: 400;
+}
+.login-box .login-form-box button {
+    text-align: center;
+    background-color: #227c8e;
+    color: #fff;
+    border: none;
+    height: 5.5dvh;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 90%;
+    margin: 5% 0%;
+  }
+
+.login-box h1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vw;
+
+  line-height: 36px;
+  text-transform: uppercase;
+  }
+
+.login-box h2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 36px;
+  text-transform: uppercase;
+  }
+
+
+  .login-box p
+  {font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 22px;
+    white-space:initial;
+
+}
+
+.login-box a{
+    font-family: 'Inter';
+    text-decoration: none;
+    color: #0C7489;
+}
+.signup{
+
+  top: 2%;
+  
+
+
+}
+@media (max-width: 735px) {
+    .login-box{
+        min-width: 80%;
+        left: 10%;
+    }
+    .login-box h1{
+
+        font-size: 7vw;
+      
+        }
+      
+      .login-box h2{
+
+        font-size: 4.5vw;
+        line-height: 36px;
+        text-transform: uppercase;
+        }
+      
+      
+        .login-box p
+        {font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2.5vw;
+          line-height: 22px;
+          white-space:initial;
+      
+      }
+      
+
+
+}

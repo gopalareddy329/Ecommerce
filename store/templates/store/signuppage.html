@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LycraMenWare Signup</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/css/login.css'%}">
+</head>
+<body>
+    
+    <div class="login-box signup">
+        
+        <h1>LycraMenWare</h1>
+        <div class="login-form-box">
+            <a href="{{ request.META.HTTP_REFERER }}" style="color: black; font-size: 20px; text-decoration: none; position: absolute; left: 15px; top: 15px;">X</a>
+            <h2>Signup</h2>
+            <form>
+                <input type="text" placeholder="Enter name">
+                <input type="email" placeholder="Enter email">
+                <input type="tel" placeholder="Enter phone number">
+                <input type="text" placeholder="ho-no,street,city,pincode,district,state">
+                <input type="password" placeholder="Enter password">
+                <input type="password" placeholder="Enter conform password">
+                <button>Signup</button>
+            </form>
+            <p>have an account?,<a href="{% url 'loginpage'%}">Login</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>

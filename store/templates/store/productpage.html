@@ -1,0 +1,46 @@
+{% extends 'store/main.html'%}
+
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css/product.css'%}">
+    <div class="product-view-container">
+        <div class="product-image">
+            <img class="product-view-primary"   src="{% static 'images/product.jpg'%}" alt="Product Image" >
+            <img  src="{% static 'images/product.jpg'%}" alt="Product Image" >
+
+            <video  controls>
+                <source src="https://www.w3schools.com/tags/movie.mp4">
+            </video>
+        </div>
+        <div class="product-info">
+            <h1>Product Name</h1>
+            <p class="description">Product description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit, nisl in dictum tincidunt, turpis velit aliquet massa, et rhoncus ex felis vitae orci.</p>
+            <p class="price">Price: 999.99</p>
+
+            <p>Availability: In Stock</p>
+
+
+            <p class="features">Key Features:</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            
+            <form>
+                <input type="radio" id="s" name="size" value="S" required>
+                <label for="s">S</label>
+                <input type="radio" id="m" name="size"  value="M">
+                <label for="m">M</label>
+                <input type="radio" id="l" name="size"  value="L">
+                <label for="l">L</label>
+                <input type="radio" id="xl" name="size"  value="XL">
+                <label for="xl">XL</label><br>
+                <button>Add to Cart</button>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock%}

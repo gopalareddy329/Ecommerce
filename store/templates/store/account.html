@@ -1,0 +1,52 @@
+{% extends 'store/main.html'%}
+    {% load static %}
+
+
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/css/account.css'%}">
+    <div class="main">
+        <h2>Profile</h2>
+        <div class="card">
+            <div class="card-body">
+            <form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><input value="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td><input value="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td><input value="address"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>:</td>
+                            <td><input type="tel" value="1234567890"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Save"></td>
+                        </tr>
+                    
+                </table>
+            </form>
+            </div>
+        </div>
+
+       
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
